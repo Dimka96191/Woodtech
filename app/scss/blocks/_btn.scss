@@ -1,0 +1,20 @@
+.btn {
+    padding: 14px 30px;
+    border: transparent;
+    display: block;
+    
+    margin-left: auto;
+    font-weight: 800;
+    line-height: 1.1;
+    background-color: $color-accent;
+    color: $color-white;
+    text-align: center;
+    border-radius: 0 5px 0 5px;
+
+    text-decoration: none;
+
+    &:hover {
+        background-color: darken($color-accent, 8%);
+        transition: 0.3s;
+    }
+}

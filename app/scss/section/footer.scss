@@ -1,0 +1,116 @@
+.footer {
+    background-color: $color-deep;
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        color: rgba($color-white, 0.7);
+        font-size: 13px;
+        line-height: calc(22 / 13);
+
+        &:nth-child(1) {
+            // max-width: 344px;
+            // width: 100%;
+        }
+        &:nth-child(2) {
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+        &:nth-child(3) {
+            max-width: 140px;
+            width: 100%;
+        }
+        &:nth-child(4) {
+            margin-left: 100px;
+        }
+    }
+    &__item-title {
+        font-weight: 900;
+        font-size: 18px;
+        line-height: calc(21 / 19);
+        text-transform: uppercase;
+        padding-bottom: 20px;
+        color: $color-white;
+    }
+
+    &__item-title--border {
+        margin-bottom: 20px;
+
+        position: relative;
+
+        &::after {
+            content: "";
+            border: transparent;
+            height: 3px;
+            width: 25px;
+            background-color: $color-accent;
+            border-radius: 0 3px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+    }
+    &__item-text {
+    }
+    &__list {
+        // margin-top: 20px;
+    }
+    &__list-item {
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+    &__list-link {
+        color: inherit;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: calc(16 / 14);
+
+        &:hover {
+            transition: .3s;
+            text-decoration: underline;
+            color: $color-accent;
+        }
+    }
+}
+.container {
+}
+.footer-logo {
+    margin-bottom: 40px;
+}
+.logo-link {
+}
+.logo-img {
+}
+.footer-socials {
+    margin-top: 35px;
+    display: flex;
+    gap: 12px;
+
+    &__item {
+    }
+    &__link {
+        width: 40px;
+        height: 40px;
+
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        border-radius: 0px 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+            transition: .3s;
+            path {
+                fill: $color-accent;
+            }
+            border-color: $color-accent;
+        }
+    }
+    &__img {
+    }
+}

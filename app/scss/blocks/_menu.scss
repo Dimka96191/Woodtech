@@ -1,0 +1,43 @@
+.menu {
+    &__list {
+        display: flex;
+    }
+    &__item {
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+
+    &__item--active .menu__link {
+        background: rgba(196, 196, 196, 0.2);
+        transition: 0.3s;
+    }
+
+    &__item--active-transp .menu__link {
+        background: $color-accent;
+        transition: 0.3s;
+        color: $color-white;
+    }
+
+    &__link {
+        color: $color-white;
+        font-weight: 500;
+        padding: 8px 15px;
+        border-radius: 0 5px 0 5px;
+        line-height: calc(16.44 / 14);
+
+        &:hover {
+            background: rgba(196, 196, 196, 0.2);
+            transition: 0.3s;
+        }
+    }
+
+    &__link--transp {
+        color: $color-text;
+        &:hover {
+            color: $color-white;
+            background: $color-accent;
+            transition: 0.3s;
+        }
+    }
+}
